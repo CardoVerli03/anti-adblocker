@@ -39,7 +39,6 @@
             margin: 0 auto;
         }
 
-        /* Header Section */
         header {
             text-align: center;
             padding: 40px 0;
@@ -78,13 +77,32 @@
             gap: 10px;
         }
 
+        .instruction-list {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        .instruction-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+            font-size: 0.9rem;
+            color: #ddd;
+        }
+
+        .instruction-list li::before {
+            content: '⚡';
+            position: absolute;
+            left: 0;
+            color: var(--primary-green);
+        }
+
         p {
             color: #ccc;
             font-size: 0.95rem;
             margin-bottom: 20px;
         }
 
-        /* Code Blocks */
         .code-header {
             display: flex;
             justify-content: flex-end;
@@ -140,7 +158,6 @@
             z-index: 100;
         }
 
-        /* Modal for Donations */
         .modal {
             display: none;
             position: fixed;
@@ -194,6 +211,17 @@
             <div class="logo">💀 Anti-Adblocker Ninja 🥷</div>
             <p>Select your weapon. Copy the code. Secure your revenue.</p>
         </header>
+
+        <div class="glass-card" style="border-color: rgba(255, 255, 255, 0.1);">
+            <h2 style="color: #fff;">📖 How to Install</h2>
+            <ul class="instruction-list">
+                <li><strong>Step 1:</strong> Choose your preferred protection level below.</li>
+                <li><strong>Step 2:</strong> Click the "COPY SCRIPT" button to copy the code to your clipboard.</li>
+                <li><strong>Step 3:</strong> Go to your website admin panel (WordPress, Blogger, or HTML).</li>
+                <li><strong>Step 4:</strong> Paste the script inside the <code>&lt;head&gt;</code> tag or just before the closing <code>&lt;/body&gt;</code> tag.</li>
+                <li><strong>Step 5:</strong> Save your changes and refresh your site to activate the ninja.</li>
+            </ul>
+        </div>
 
         <div class="glass-card">
             <h2>🟢 Level 1: Light Annoyance</h2>
